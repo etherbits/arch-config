@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{788:function(n,i,t){"use strict";t.r(i),t.d(i,"checkOldLocalData",(function(){return c}));t(8);const c=async()=>["infinity-settings","infinity-searches","infinity-icons"].some(n=>!!localStorage.getItem(n))}}]);

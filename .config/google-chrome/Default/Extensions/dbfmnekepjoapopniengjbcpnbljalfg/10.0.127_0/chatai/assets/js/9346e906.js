@@ -1,1 +1,0 @@
-(()=>{"use strict";let e=null;self.onmessage=s=>{"clear"===s.data&&e&&clearInterval(e)},e=setInterval((()=>{self.postMessage("tick")}),1e3)})();

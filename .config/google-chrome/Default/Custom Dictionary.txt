@@ -1,2 +1,0 @@
-alphanum
-checksum_v1 = 3193771f70993494ae8b96cfa8d72655
