@@ -1,0 +1,37 @@
+{
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content-script/import-index.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Enhance your livestream viewing experience",
+   "devtools_page": "devtools/entry.html",
+   "externally_connectable": {
+      "ids": [ "pmnmpgjfacmjcnfigcmgfipemjpggmeg" ],
+      "matches": [ "*://*.truffle.vip/*" ]
+   },
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm8aUoSOHJ3CLI88dtHf+dlZJzHVn45gLLDrpP7iy2aoYPLEjQnsFSFu1jbNhbhaA4ilmDtcR5WX7j/8JCAXtrc2JEACg3k9Qgp6l9Z2EN6DWBg2IrwJR69w2/CxXb5HVfJp5Bu342N7Fpvl8uxPRX5S55SUomXVwIuujWQpNDxofhqH+kFtBKfdjDLZ5QPcFAnxRXX5I5BK5MWNdXb64o7hbbHpvXPVXFi/MPCyHHsOsd9P0rjFdj2vOxRDcKeXdQ/VgTV27359GNquoHD4ZtF0VufXvUN4+w9swU7CcKlTaY3D4v+paN0q3LpPRNi30UpWG2uIElxkIz1mbt79JlwIDAQAB",
+   "manifest_version": 3,
+   "name": "Truffle",
+   "permissions": [ "cookies", "storage", "unlimitedStorage", "gcm", "notifications", "declarativeNetRequestWithHostAccess" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.7.1",
+   "web_accessible_resources": [ {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "injected-script/index.js", "devtools/index.html" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "chunks/*-*.js", "content-script/index.js" ]
+   } ]
+}
