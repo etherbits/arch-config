@@ -1,18 +1,6 @@
-2024/07/10-15:48:44.001 44c5 Reusing MANIFEST /home/etherbits/.config/google-chrome/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/MANIFEST-000001
-2024/07/10-15:48:44.001 44c5 Recovering log #89
-2024/07/10-15:48:44.004 44c5 Reusing old log /home/etherbits/.config/google-chrome/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/000089.log 
-2024/07/10-15:48:49.286 44c0 Level-0 table #93: started
-2024/07/10-15:48:49.299 44c0 Level-0 table #93: 1769575 bytes OK
-2024/07/10-15:48:49.301 44c0 Delete type=0 #89
-2024/07/10-15:49:03.283 44c0 Level-0 table #95: started
-2024/07/10-15:49:03.306 44c0 Level-0 table #95: 2397163 bytes OK
-2024/07/10-15:49:03.308 44c0 Delete type=0 #92
-2024/07/10-15:49:03.308 44c0 Compacting 4@0 + 1@1 files
-2024/07/10-15:49:03.334 44c0 Generated table #96@0: 13 keys, 2489284 bytes
-2024/07/10-15:49:03.335 44c0 Compacted 4@0 + 1@1 files => 2489284 bytes
-2024/07/10-15:49:03.336 44c0 compacted to: files[ 0 2 2 0 0 0 0 ]
-2024/07/10-15:49:03.336 44c0 Delete type=2 #87
-2024/07/10-15:49:03.336 44c0 Delete type=2 #93
-2024/07/10-15:49:03.336 44c0 Delete type=2 #90
-2024/07/10-15:49:03.336 44c0 Delete type=2 #95
-2024/07/10-15:49:03.336 44c0 Delete type=2 #83
+2024/07/10-15:50:31.332 4869 Reusing MANIFEST /home/etherbits/.config/google-chrome/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/MANIFEST-000001
+2024/07/10-15:50:31.332 4869 Recovering log #94
+2024/07/10-15:50:31.337 4869 Reusing old log /home/etherbits/.config/google-chrome/Default/Local Extension Settings/bmnlcjabgnpnenekpadlanbbkooimhnj/000094.log 
+2024/07/10-15:50:38.496 485f Level-0 table #99: started
+2024/07/10-15:50:38.520 485f Level-0 table #99: 1770313 bytes OK
+2024/07/10-15:50:38.522 485f Delete type=0 #94

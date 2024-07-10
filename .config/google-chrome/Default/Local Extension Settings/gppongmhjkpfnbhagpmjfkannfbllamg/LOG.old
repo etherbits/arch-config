@@ -1,42 +1,18 @@
-2024/07/10-15:48:45.996 44c0 Reusing MANIFEST /home/etherbits/.config/google-chrome/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/MANIFEST-000001
-2024/07/10-15:48:45.997 44c0 Recovering log #73
-2024/07/10-15:48:46.002 44c0 Reusing old log /home/etherbits/.config/google-chrome/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/000073.log 
-2024/07/10-15:48:47.578 44c0 Level-0 table #77: started
-2024/07/10-15:48:47.587 44c0 Level-0 table #77: 640909 bytes OK
-2024/07/10-15:48:47.588 44c0 Delete type=0 #73
-2024/07/10-15:48:47.589 44c0 Compacting 4@0 + 1@1 files
-2024/07/10-15:48:47.595 44c0 Generated table #78@0: 1 keys, 171460 bytes
-2024/07/10-15:48:47.595 44c0 Compacted 4@0 + 1@1 files => 171460 bytes
-2024/07/10-15:48:47.596 44c0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/07/10-15:48:47.597 44c0 Delete type=2 #68
-2024/07/10-15:48:47.597 44c0 Delete type=2 #77
-2024/07/10-15:48:47.597 44c0 Delete type=2 #66
-2024/07/10-15:48:47.597 44c0 Delete type=2 #74
-2024/07/10-15:48:47.597 44c0 Delete type=2 #71
-2024/07/10-15:48:49.428 44c0 Level-0 table #80: started
-2024/07/10-15:48:49.436 44c0 Level-0 table #80: 693739 bytes OK
-2024/07/10-15:48:49.437 44c0 Delete type=0 #76
-2024/07/10-15:48:59.455 44c0 Level-0 table #82: started
-2024/07/10-15:48:59.464 44c0 Level-0 table #82: 695439 bytes OK
-2024/07/10-15:48:59.465 44c0 Delete type=0 #79
-2024/07/10-15:49:05.447 44c0 Level-0 table #84: started
-2024/07/10-15:49:05.452 44c0 Level-0 table #84: 694582 bytes OK
-2024/07/10-15:49:05.453 44c0 Delete type=0 #81
-2024/07/10-15:49:12.449 44c0 Level-0 table #86: started
-2024/07/10-15:49:12.458 44c0 Level-0 table #86: 693011 bytes OK
-2024/07/10-15:49:12.461 44c0 Delete type=0 #83
-2024/07/10-15:49:12.464 44c0 Compacting 4@0 + 1@1 files
-2024/07/10-15:49:12.502 44c0 Generated table #87@0: 1 keys, 174221 bytes
-2024/07/10-15:49:12.503 44c0 Compacted 4@0 + 1@1 files => 174221 bytes
-2024/07/10-15:49:12.504 44c0 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/07/10-15:49:12.504 44c0 Delete type=2 #80
-2024/07/10-15:49:12.504 44c0 Delete type=2 #82
-2024/07/10-15:49:12.504 44c0 Delete type=2 #84
-2024/07/10-15:49:12.504 44c0 Delete type=2 #78
-2024/07/10-15:49:12.504 44c0 Delete type=2 #86
-2024/07/10-15:49:35.784 44c0 Level-0 table #89: started
-2024/07/10-15:49:35.792 44c0 Level-0 table #89: 701167 bytes OK
-2024/07/10-15:49:35.793 44c0 Delete type=0 #85
-2024/07/10-15:49:39.604 44c0 Level-0 table #91: started
-2024/07/10-15:49:39.609 44c0 Level-0 table #91: 708038 bytes OK
-2024/07/10-15:49:39.610 44c0 Delete type=0 #88
+2024/07/10-15:50:33.354 485e Reusing MANIFEST /home/etherbits/.config/google-chrome/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/MANIFEST-000001
+2024/07/10-15:50:33.354 485e Recovering log #90
+2024/07/10-15:50:33.358 485e Reusing old log /home/etherbits/.config/google-chrome/Default/Local Extension Settings/gppongmhjkpfnbhagpmjfkannfbllamg/000090.log 
+2024/07/10-15:50:35.296 485f Level-0 table #94: started
+2024/07/10-15:50:35.305 485f Level-0 table #94: 701126 bytes OK
+2024/07/10-15:50:35.308 485f Delete type=0 #90
+2024/07/10-15:50:38.848 485f Level-0 table #96: started
+2024/07/10-15:50:38.857 485f Level-0 table #96: 690977 bytes OK
+2024/07/10-15:50:38.858 485f Delete type=0 #93
+2024/07/10-15:50:38.859 485f Compacting 4@0 + 1@1 files
+2024/07/10-15:50:38.872 485f Generated table #97@0: 1 keys, 173613 bytes
+2024/07/10-15:50:38.873 485f Compacted 4@0 + 1@1 files => 173613 bytes
+2024/07/10-15:50:38.874 485f compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/07/10-15:50:38.874 485f Delete type=2 #87
+2024/07/10-15:50:38.874 485f Delete type=2 #94
+2024/07/10-15:50:38.874 485f Delete type=2 #91
+2024/07/10-15:50:38.874 485f Delete type=2 #89
+2024/07/10-15:50:38.874 485f Delete type=2 #96
