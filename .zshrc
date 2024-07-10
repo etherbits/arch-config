@@ -7,13 +7,29 @@ alias dotgit='/usr/bin/git --git-dir=/home/etherbits/arch-config/ --work-tree=/h
 
 export EDITOR=zed
 
+zo(){
+if [[ $# -eq 1 ]]; then
+      selected=$1
+      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
+  else
+      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
+  fi
+
+  if [[ -z $selected ]]; then
+      exit 0
+  fi
+
+  echo $selected
+  zeditor $selected
+}
+
 # custom commands
 pf(){
   if [[ $# -eq 1 ]]; then
       selected=$1
-      selected=$(find  ~/projects ~/projects/exercism/gleam/ ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
+      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
   else
-      selected=$(find  ~/projects ~/projects/exercism/gleam/ ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
+      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
   fi
 
   if [[ -z $selected ]]; then
@@ -98,3 +114,7 @@ unzipad(){
     fi
   done
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
