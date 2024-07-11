@@ -5,7 +5,10 @@ bindkey -v
 
 alias dotgit='/usr/bin/git --git-dir=/home/etherbits/arch-config/ --work-tree=/home/etherbits'
 
-export EDITOR=zed
+# add env variables
+source ~/.env.sh
+
+export EDITOR=zeditor
 
 zo(){
 if [[ $# -eq 1 ]]; then
@@ -120,5 +123,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 eval "$(starship init zsh)"
 source /home/etherbits/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/etherbits/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+#source /home/etherbits/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /home/etherbits/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
