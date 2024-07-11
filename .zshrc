@@ -118,3 +118,7 @@ unzipad(){
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(starship init zsh)"
+source /home/etherbits/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/etherbits/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /home/etherbits/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
