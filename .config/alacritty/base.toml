@@ -2,14 +2,14 @@
 size = 14.0
 
 [font.normal]
-family = "Monaspace Neon"
+family = "SF Mono Powerline"
 
 [window]
-opacity = 0.8
+opacity = 1
 
 [window.padding]
-x = 20
-y = 16
+x = 0
+y = 0
 
 [env]
 TERM = "xterm-256color"

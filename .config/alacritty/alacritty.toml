@@ -2,8 +2,8 @@ import = [
   # base config
   "~/.config/alacritty/base.toml",
  
-  # extension
-  # "~/.config/alacritty/catppuccin-macchiato.toml",
+  # themes
+  "~/.config/alacritty/tokyo-night.toml",
 
   #"~/.config/alacritty/kanagawa_dragon.toml"
 ]

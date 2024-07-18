@@ -5,6 +5,7 @@ bindkey -v
 
 alias dotgit='/usr/bin/git --git-dir=/home/etherbits/arch-config/ --work-tree=/home/etherbits'
 alias vim=nvim
+alias zj=zellij
 
 # add env variables
 source ~/.env.sh
