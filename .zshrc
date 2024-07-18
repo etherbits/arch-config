@@ -4,11 +4,12 @@ SAVEHIST=10000
 bindkey -v
 
 alias dotgit='/usr/bin/git --git-dir=/home/etherbits/arch-config/ --work-tree=/home/etherbits'
+alias vim=nvim
 
 # add env variables
 source ~/.env.sh
 
-export EDITOR=zeditor
+export EDITOR=nvim
 
 zo(){
 if [[ $# -eq 1 ]]; then
@@ -125,3 +126,11 @@ eval "$(starship init zsh)"
 source /home/etherbits/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source /home/etherbits/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /home/etherbits/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# pnpm
+export PNPM_HOME="/home/etherbits/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
