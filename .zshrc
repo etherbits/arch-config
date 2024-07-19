@@ -15,7 +15,7 @@ export EDITOR=nvim
 # custom commands
 
 # find and go to directory using fzf
-pf(){
+pc(){
   if [[ $# -eq 1 ]]; then
       selected=$1
       selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
@@ -27,14 +27,15 @@ pf(){
       exit 0
   fi
 
+  echo $selected
   cd $selected
-  selected_name=$(basename "$selected" | tr . _)
-
-  echo $selected_name
 }
 
-pz(){
-  selected_name=$( pf $1)
+pf(){
+  selected=$( pc $1)
+  selected_name=$(basename "$selected" | tr . _)
+
+  cd $selected
   zj ls -s | grep -xq $selected_name && zj attach $selected_name || zj -s $selected_name
 }
 
