@@ -4,7 +4,9 @@ layout {
             pane name="L1"
             pane name="L2"
         }
-        pane name="R1" focus=true
+        pane name="R1" focus=true command="nvim"{
+            args "."
+        }
     }
 
     default_tab_template{

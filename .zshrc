@@ -13,6 +13,8 @@ source ~/.env.sh
 export EDITOR=nvim
 
 # custom commands
+
+# find and go to directory using fzf
 pf(){
   if [[ $# -eq 1 ]]; then
       selected=$1
@@ -26,11 +28,14 @@ pf(){
   fi
 
   cd $selected
-
   selected_name=$(basename "$selected" | tr . _)
 
-  zj ls -s | grep -xq $selected_name && zj attach $selected_name || zj -s $selected_name
+  echo $selected_name
+}
 
+pz(){
+  selected_name=$( pf $1)
+  zj ls -s | grep -xq $selected_name && zj attach $selected_name || zj -s $selected_name
 }
 
 qc(){
