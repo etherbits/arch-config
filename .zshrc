@@ -25,7 +25,7 @@ pf(){
       exit 0
   fi
 
-  echo $selected
+  cd $selected
 
   selected_name=$(basename "$selected" | tr . _)
 
