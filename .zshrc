@@ -12,22 +12,6 @@ source ~/.env.sh
 
 export EDITOR=nvim
 
-zo(){
-if [[ $# -eq 1 ]]; then
-      selected=$1
-      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf -q $selected -1)
-  else
-      selected=$(find  ~/projects  ~/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
-  fi
-
-  if [[ -z $selected ]]; then
-      exit 0
-  fi
-
-  echo $selected
-  zeditor $selected
-}
-
 # custom commands
 pf(){
   if [[ $# -eq 1 ]]; then
@@ -45,16 +29,7 @@ pf(){
 
   selected_name=$(basename "$selected" | tr . _)
 
-  if ! tmux has-session -t=$selected_name 2> /dev/null; then
-    tmux new -s $selected_name -c $selected -d -x "$(tput cols)" -y "$(tput lines)"
-    if [[ $selected == ~/projects/* ]]; then
-      tmux splitw -h -l '75%' -t $selected_name -c $selected
-      tmux send-keys -t $selected_name 'vim .' Enter
-    fi
-    tmux attach -t $selected_name
-  else
-    tmux attach-session -t $selected_name
-  fi
+  zj ls -s | grep -xq $selected_name && zj attach $selected_name || zj -s $selected_name
 
 }
 
@@ -90,7 +65,7 @@ qcpdots(){
 }
 
 i(){
-	sudo pacman -S "$1"
+  sudo pacman -S "$1"
 }
 
 
